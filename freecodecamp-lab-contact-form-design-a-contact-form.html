@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <style>
+          .form-container{
+            border-radius: 10px;
+            padding: 20px;
+            width: 10rem;
+            background-color: white;
+          }
+          
+          label{
+            margin: 1px;
+            margin-bottom: 1rem;
+            color: rgb(8, 33, 144);
+          }
+          
+          input, textarea{
+            width: 20rem;
+            height: 1.4rem;
+            padding: 0.3rem;
+            margin-bottom: 0.9rem;
+            border-width: 0.2rem;
+            border-color: rgb(11, 10, 57);
+            border-radius: 0.3rem;
+            font-size: 1rem;
+          }
+          
+          button{
+            background-color: rgb(130, 228, 130);
+            font-size: 1rem;
+            border-radius: 0.3rem;
+            height: 2rem;
+            cursor: pointer;
+          }
+          
+          button:hover{
+            background-color: rgb(2, 53, 2);
+            color: white;
+          }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+    <form>
+        <h2>Contact Me</h2>
+        
+        <label for="text">Name</label>
+        <input type="text" id="text" name="text" required/>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required/>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+</body>
+
+</html>
