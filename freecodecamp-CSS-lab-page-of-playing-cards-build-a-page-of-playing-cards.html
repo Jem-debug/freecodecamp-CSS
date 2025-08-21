@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Playing Cards</title>
+  <style>
+     body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    #playing-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      width: 120px;
+      height: 180px;
+      background: #fff;
+      color: black;
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      position: relative;
+    }
+
+    .left, .middle, .right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .left {
+      align-self: flex-start;
+      font-size: 18px;
+    }
+
+    .middle {
+      flex-direction: column;
+      align-self: center;
+      font-size: 28px;
+      font-weight: bold;
+      display: flex
+    }
+
+    .right {
+      align-self: flex-end;
+      font-size: 18px;
+    }
+
+    .hearts, .diamonds {
+      color: red;
+    }
+    .spades, .clubs {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <main id="playing-cards">
+    <div class="card hearts">
+      <div class="left">♥A</div>
+      <div class="middle">
+        <div>♥</div>
+        <div>A</div>
+      </div>
+      <div class="right">A♥</div>
+    </div>
+
+    <div class="card spades">
+      <div class="left">♠K</div>
+      <div class="middle">
+        <div>♠</div>
+        <div>K</div>
+      </div>
+      <div class="right">K♠</div>
+    </div>
+
+    <div class="card clubs">
+      <div class="left">♣7</div>
+      <div class="middle">
+        <div>♣</div>
+        <div>7</div>
+      </div>
+      <div class="right">7♣</div>
+    </div>
+  </main>
+</body>
+</html>
